@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 
 // Inline-styling for drum-pad
 const drumPadStyle = {
-    border: "solid 1px black",
+    border: "solid 2px black",
     borderRadius: "0.25rem",
+    backgroundColor: "pink",
     margin: "0.5rem",
     width: "5.4rem",
     height: "5.4rem",
+    fontSize: "2rem"
 }
 
 export default class DrumPad extends Component {
@@ -37,7 +39,6 @@ export default class DrumPad extends Component {
         this.sound.currentTime = 0;
         this.sound.play().catch(err => console.log(err));
         this.props.updateDisplay(this.props.id.replace('-', ' '));
-        // console.log(this.props.id);
     }
 
     render() {

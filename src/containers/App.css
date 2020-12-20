@@ -27,6 +27,8 @@
   height: 19rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #display {
@@ -36,7 +38,7 @@
   margin: 0.5rem;
   height: 2rem;
   width: 60%;
-  border: solid 1px blue;
+  border: solid 1px grey;
   border-radius: 0.25rem;
   background-color: white;
 }
