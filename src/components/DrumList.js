@@ -1,24 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import DrumPad from './DrumPad';
 
 // Pass in an array of objects to display through array.map
-const DrumList = ({ sounds }) => {
-    return (
-        <div className="drum-list">
-            {
-                // Only need the second parameter of array.map for index
-                sounds.map((sound, i) => {
-                    return (
-                        <DrumPad 
-                            id={sounds[i].id}
-                            keyboard={sounds[i].keyboard}
-                            src={sounds[i].src}
-                        />
-                    )
-                })
-            }
-        </div>
-    );
-}
+export default class DrumList extends Component {
 
-export default DrumList;
+    render() {
+        const { sounds } = this.props;
+        return(
+            sounds.map((sound, i) => {
+                return (
+                    <DrumPad 
+                        key={i}
+                        id={sounds[i].id}
+                        keyCode={sounds[i].keyCode}
+                        keyboard={sounds[i].keyboard}
+                        src={sounds[i].src}
+                        // passed in from App.js to update display element
+                        updateDisplay={this.props.updateDisplay}
+                    />
+                );
+            })
+        )
+    }
+}

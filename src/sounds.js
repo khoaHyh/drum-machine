@@ -1,49 +1,58 @@
 // Array containing sounds that will be used for src attributes
 const sounds = [
     {
-        id: "Bass",
+        id: "Heater-1",
+        keyCode: 81,
         keyboard: "Q",
-        src: "http://dight310.byu.edu/media/audio/FreeLoops.com/1/1/Boom%20Kick%20Drum-11943-Free-Loops.com.mp3"
+        src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
     },
     {
-        id: "Snare",
+        id: "Heater-2",
+        keyCode: 87,
         keyboard: "W",
-        src: "http://dight310.byu.edu/media/audio/FreeLoops.com/3/3/Free%20Drum%20Snare%2015-981-Free-Loops.com.mp3"
+        src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
     },
     {
-        id: "Hit",
+        id: "Heater-3",
+        keyCode: 69,
         keyboard: "E",
-        src: "http://vincentbernay.free.fr/free-percussions-loops/Conga2.mp3"
+        src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"
     },
     {
-        id: "Synth-bass",
+        id: "Heater-4",
+        keyCode: 65,
         keyboard: "A",
-        src: "http://dight310.byu.edu/media/audio/FreeLoops.com/1/1/808%20Drum%20Kick%20032-2466-Free-Loops.com.mp3"
+        src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
     },
     {
         id: "Clap",
+        keyCode: 83,
         keyboard: "S",
-        src: "http://www.randomthink.net/labs/html5drums/drumkit/Clap.mp3"
+        src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"
     },
     {
-        id: "Hi-hat",
+        id: "Open High-hat",
+        keyCode: 68,
         keyboard: "D",
-        src: "http://dight310.byu.edu/media/audio/FreeLoops.com/4/4/HiHat%2010.wav-9258-Free-Loops.com.mp3"
+        src: "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
     },
     {
-        id: "Low-tom",
+        id: "Kick N Hat",
+        keyCode: 90,
         keyboard: "Z",
-        src: "http://dight310.byu.edu/media/audio/FreeLoops.com/1/1/909%20Low%20Tom-21882-Free-Loops.com.mp3"
+        src: "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
     },
     {
-        id: "Bongo",
+        id: "Kick",
+        keyCode: 88,
         keyboard: "X",
-        src: "http://dight310.byu.edu/media/audio/FreeLoops.com/1/1/Bongo%20Conga%20Hit%20001-1716-Free-Loops.com.mp3"
+        src: "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
     },
     {
-        id: "Synth-perc",
+        id: "Punchy-kick",
+        keyCode: 67,
         keyboard: "C",
-        src: "http://www.synthmania.com/Roland%20D-50/Audio/Waveform%20demos/PCM%2047%20-%20Pizz.mp3"
+        src: "https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3"
     }
 ]
 
