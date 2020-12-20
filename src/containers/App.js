@@ -27,7 +27,7 @@ class App extends Component {
         <ReactFCCtest />
         <div id="drum-machine">
           <div id="display"></div>
-          <DrumList sounds={sounds}/>
+          <DrumList sounds={sounds} />
         </div>
       </div>
     );
