@@ -14,12 +14,9 @@ import sounds from '../sounds';
 //  audio clip is displayed as inner text of #display element
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-  }
+  // constructor() {
+  //   super();
+  // }
 
   render() {
     return (

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 
 const drumPadStyle = {
@@ -9,13 +9,35 @@ const drumPadStyle = {
     height: "2rem",
 }
 
-const DrumPad = ({ id, keyboard, src }) => {
-    return (
-        <button id={id} className="drum-pad" style={drumPadStyle} >
-            {keyboard}
-            <ReactAudioPlayer src={src} />
-        </button>
-    );
+export default class DrumPad extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            keyPressed: ""
+        }
+    }
+
+    
+
+    render() {
+        const { id, keyboard, src } = this.props;
+        return (
+            <button id={id} className="drum-pad" style={drumPadStyle}>
+                {keyboard}
+                <ReactAudioPlayer src={src} />
+            </button>
+        );
+    }
 }
 
-export default DrumPad;
+// const DrumPad = ({ id, keyboard, src }) => {
+//     console.log(keyboard)
+//     return (
+//         <button id={id} className="drum-pad" style={drumPadStyle} >
+//             {keyboard}
+//             <ReactAudioPlayer src={src} />
+//         </button>
+//     );
+// }
+
+// export default DrumPad;
