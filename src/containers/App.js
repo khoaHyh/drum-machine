@@ -8,7 +8,7 @@ import { setDisplayField } from '../actions';
 
 const mapStateToProps = state => {
   return {
-    innerText: state.innerText
+    innerText: state.detectSound.innerText
   }
 }
 

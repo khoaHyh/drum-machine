@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './DrumPad.css';
 
-export default class DrumPad extends Component {
+class DrumPad extends Component {
     constructor(props) {
         super(props);
         this.playSound = this.playSound.bind(this);
@@ -28,6 +28,7 @@ export default class DrumPad extends Component {
     playSound() {
         this.sound.currentTime = 0;
         this.sound.play().catch(err => console.log(err));
+        // Replaces any dashes in the id with spaces
         this.props.updateDisplay(this.props.id.replace('-', ' '));
     }
 
@@ -46,3 +47,5 @@ export default class DrumPad extends Component {
         );
     }
 }
+
+export default DrumPad;

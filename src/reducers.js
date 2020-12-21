@@ -1,4 +1,4 @@
-import { CHANGE_DISPLAY_FIELD } from "./constants"
+import { CHANGE_DISPLAY_FIELD } from "./constants";
 
 // takes state and action and always returns a new state
 const initialState = {
