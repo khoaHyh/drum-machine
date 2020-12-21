@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
-
-// Inline-styling for drum-pad
-const drumPadStyle = {
-    border: "solid 2px black",
-    borderRadius: "0.25rem",
-    backgroundColor: "pink",
-    margin: "0.5rem",
-    width: "5.4rem",
-    height: "5.4rem",
-    fontSize: "2rem"
-}
+import './DrumPad.css';
 
 export default class DrumPad extends Component {
     constructor(props) {
@@ -44,7 +34,7 @@ export default class DrumPad extends Component {
     render() {
         const { id, keyboard, src } = this.props;
         return (
-            <button id={id} onClick={this.playSound} className="drum-pad" style={drumPadStyle}>
+            <button id={id} onClick={this.playSound} className="drum-pad">
                 {keyboard}
                 <audio 
                     id={keyboard} 

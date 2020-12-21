@@ -1,0 +1,18 @@
+.drum-pad {
+    border: solid 2px black;
+    border-radius: 0.25rem;
+    background-color: pink;
+    margin: 0.4rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .drum-pad {
+        margin: 0.5rem;
+        width: 5.4rem;
+        height: 5.4rem;
+        font-size: 2rem;
+    }
+}
